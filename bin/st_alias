@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# We want to have the directory changes permanent.
+alias cc='source cc'
+alias cx='source cx'
+alias cb='cd ..'
