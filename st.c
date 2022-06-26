@@ -232,7 +232,7 @@ static STREscape strescseq;
 static int iofd = 1;
 static int cmdfd;
 static pid_t pid;
-// utfbyte: 10XXXXXX  0XXXXXXX 110XXXXX 1110XXXX 11110XXX
+// 10XXXXXX 0XXXXXXX 110XXXXX 1110XXXX 11110XXX
 static const uchar utfbyte[UTF_SIZ + 1] = {0x80,    0, 0xC0, 0xE0, 0xF0};
 static const uchar utfmask[UTF_SIZ + 1] = {0xC0, 0x80, 0xE0, 0xF0, 0xF8};
 static const Rune utfmin[UTF_SIZ + 1] = {       0,    0,  0x80,  0x800,  0x10000};

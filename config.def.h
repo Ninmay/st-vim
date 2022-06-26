@@ -201,7 +201,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
-	{ TERMMOD,              XK_D,           ttysend,   {.s = "fcd\n"} },
+	{ TERMMOD,              XK_E,           ttysend,   {.s = "fcd\n"} },
 	{ TERMMOD,              XK_W,           ttysend, {.s = "fwalk\n"} },
 	{ TERMMOD,              XK_R,           ttysend,  {.s = "frun\n"} },
 };

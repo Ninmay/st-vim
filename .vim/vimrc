@@ -1,0 +1,114 @@
+unlet! skip_defaults_vim " vim defaults are pretty good
+source $VIMRUNTIME/defaults.vim
+
+set nu rnu " eye candy config
+colorscheme dracula
+set colorcolumn=75
+highlight link javaIdentifier NONE
+
+set shiftwidth=2 " tab vs spaces
+set tabstop=2
+set expandtab
+
+set foldopen-=search " search doesn't open folds
+set foldmethod=marker
+
+" movement
+nnoremap <C-j> 3j
+nnoremap <C-k> 3k
+
+" save, edit quit quickly
+nnoremap <C-w> :w<CR>
+nnoremap <C-q> :q<CR>
+nnoremap <C-e> :e 
+
+" buffer management
+nnoremap <C-l> :ls<CR>
+nnoremap <C-b> :bd<CR>
+nnoremap <C-n> :bn<CR>
+nnoremap <C-m> :bp<CR>
+
+" fuzzy and syntax
+nnoremap <C-p> :Files<CR>
+nnoremap <C-g> :GFiles<CR>
+nnoremap <S-u> :UpdateTypesFile<CR>
+nnoremap <C-s> <C-w>
+nnoremap <C-s><C-]> <C-w><C-]><C-w>14-
+nnoremap <C-\> <C-o>
+
+" add a letter quickly
+nnoremap <Space> i_<Esc>r
+nnoremap <C-@> a_<Esc>r
+
+" add/remove lines independently from brackets
+nnoremap <S-o> o<Esc><S-c><Esc>
+nnoremap <S-d> dd
+nnoremap <C-o> <S-o><Esc><S-c><Esc>
+nnoremap <S-c> <S-c><Esc>
+
+" folds
+nnoremap zo za
+nnoremap zf i//<Space>{{{}}}<Esc>F{a<CR><Esc>k<S-a>
+nnoremap zd :call FoldRemove()<CR>
+
+" C
+nnoremap \for :r $HOME/.vim/completion/for.c<CR>2==fs
+nnoremap \while :r $HOME/.vim/completion/while.c<CR>2==fc
+nnoremap \fun :r $HOME/.vim/completion/function.c<CR>2==
+nnoremap \pf :r $HOME/.vim/completion/printf.c<CR>1==f"f"
+" Java
+nnoremap \class :r $HOME/.vim/completion/Class.java<CR>1==fC
+nnoremap \interface :r $HOME/.vim/completion/Interface.java<CR>2==fC
+nnoremap \sout :r $HOME/.vim/completion/Sout.java<CR>==f)i
+" Latex
+nnoremap \l :!pdflatex %:p<CR><CR>
+nnoremap \p :!zathura --fork %:t:r.pdf<CR><CR>
+
+" insert mode movement
+inoremap <C-f> <right>
+inoremap <C-b> <left>
+inoremap <C-k> <up>
+inoremap <C-j> <down>
+inoremap <C-d> <Del>
+inoremap <C-o> <Esc><S-o>
+inoremap <C-a> <Esc>0i
+inoremap <C-e> <Esc>$a
+inoremap <C-z> <C-[>
+
+" bracket closing
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap { {}<left>
+inoremap [ []<left>
+inoremap < <><left>
+
+" cancel bracket
+inoremap `" "
+inoremap `' '
+inoremap `( (
+inoremap `{ {
+inoremap `[ [
+inoremap `< <
+inoremap `` `
+
+" insert mode word delete/replace
+inoremap <C-w> <Esc>diwi
+inoremap <C-c> <Esc>wcw
+
+" insert mode indent
+inoremap <C-y> <C-d>
+
+" vim functions
+function! FoldRemove()
+  g/\/\/ {{{/d
+  g/\/\/ }}}/d
+endfunction
+
+call plug#begin() " plugins
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'dracula/vim'
+
+call plug#end()
