@@ -1,9 +1,0 @@
-#!/bin/bash
-
-## @file
-# Mark the directory for cx script.
-
-BIN="$HOME/Build/st/bin"
-CX='cx'
-
-sed -i "s|=.*$|=$(pwd)|g" "$BIN/$CX"

@@ -201,13 +201,14 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,         {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,       {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,     {.i = -1} },
-	{ TERMMOD,              XK_W,           ttysend,  {.s = "fwalk\n"} },
-	{ TERMMOD,              XK_R,           ttysend,   {.s = "frun\n"} },
-	{ TERMMOD,              XK_T,           ttysend,    {.s = "fcd\n"} },
-	{ TERMMOD,              XK_F,           ttysend, {.s = "ranger\n"} },
-	{ TERMMOD,              XK_H,           ttysend, {.s = "ch\n"} },
-	{ TERMMOD,              XK_M,           ttysend, {.s = "cm\n"} },
-	{ TERMMOD,              XK_X,           ttysend, {.s = "cx\n"} },
+	{ TERMMOD,              XK_F,           ttysend,         {.s = "ranger\n"}    },
+	{ TERMMOD,              XK_L,           ttysend,         {.s = "ls\n"}        },
+	{ TERMMOD,              XK_W,           ttysend,         {.s = "fwalk\n"}     },
+	{ TERMMOD,              XK_R,           ttysend,         {.s = "frun\n"}      },
+	{ TERMMOD,              XK_T,           ttysend,         {.s = "fcd\n"}       },
+	{ TERMMOD,              XK_H,           ttysend,         {.s = "ch\n"}        },
+	{ TERMMOD,              XK_M,           ttysend,         {.s = "dir-mark\n"}  },
+	{ TERMMOD,              XK_X,           ttysend,         {.s = "goto-mark\n"} },
 };
 
 /*
