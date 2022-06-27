@@ -11,7 +11,8 @@ Requirements
 ------------
 In order to build st you need the Xlib header files.
 It's intended to be an add-on for my dwm repo, because of various
-compatibilities. You can always take the scripts from dwm repo instead.
+compatibilities. You can always have st standalone and take the scripts
+from dwm repo instead.
 
 Changes and my experience
 -------------------------
