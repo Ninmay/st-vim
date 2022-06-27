@@ -1,7 +1,0 @@
-#!/bin/bash
-
-## @file
-# Change the working directory to the coding environment.
-
-CODE=Media/Code
-cd "$HOME/$CODE"

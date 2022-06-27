@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/nintendo/Media/Code/zadanie3'
+let g:netrw_dirhist_8='/home/nintendo/Media/Code'
+let g:netrw_dirhist_7='/home/nintendo/Media'
 let g:netrw_dirhist_6='/home/nintendo'
 let g:netrw_dirhist_5='/home/nintendo/.vim'
 let g:netrw_dirhist_4='/home/nintendo/Build/dwm/bin/test/extract'
@@ -7,6 +10,3 @@ let g:netrw_dirhist_3='/home/nintendo/Build/dwm/scripts'
 let g:netrw_dirhist_2='/home/nintendo/Build/dwm'
 let g:netrw_dirhist_1='/home/nintendo'
 let g:netrw_dirhist_0='/home/nintendo/Media/Code/PO/Example1/oop-matrices/gradle'
-let g:netrw_dirhist_9='/home/nintendo/Build/vim/.vim'
-let g:netrw_dirhist_8='/home/nintendo/Media/Code/PO/Laboratorium/stringImplementations'
-let g:netrw_dirhist_7='/usr/share/vim'

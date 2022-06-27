@@ -3,5 +3,5 @@
 ## @file
 # Change the working directory to the marked environment.
 
-MARK=/home/nintendo/Build/st/bin
+MARK=/home/nintendo/Build/st
 cd "$MARK"

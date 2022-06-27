@@ -1,0 +1,6 @@
+#!/bin/bash
+
+## @file
+# Change the working directory to $HOME.
+
+cd "$HOME"
