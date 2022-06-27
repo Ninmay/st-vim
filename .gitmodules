@@ -7,3 +7,6 @@
 [submodule ".vim/plugged/fzf"]
 	path = .vim/plugged/fzf
 	url = https://github.com/junegunn/fzf
+[submodule ".vim/plugged/nerdtree"]
+	path = .vim/plugged/nerdtree
+	url = https://github.com/preservim/nerdtree
