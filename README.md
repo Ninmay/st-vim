@@ -16,10 +16,11 @@ from dwm repo instead.
 
 Changes and my experience
 -------------------------
-First basic install, patching up, commands on terminal using shortcuts.
-To do: marking directories, full st documentation in Polish.
+First basic install, patching up, commands on terminal using shortcuts,
+marking directories. To do: full st documentation in Polish.
 First basic install, .vimrc, syntax highlighting, nice colorscheme,
-To do: constant omnicompletion, full vim config documentation in Polish.
+To do: autocompletion, make .vimrc pretty, full vim config documentation
+in Polish.
 
 Configuration
 -------------
