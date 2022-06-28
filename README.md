@@ -24,11 +24,10 @@ in Polish.
 
 Configuration
 -------------
-Once you clone the repo, on first time:
+Do it as you would with dwm. Once you clone the repo, on first time:
 ```bash
 git submodule update --init --recursive
 ```
-If you don't have the dwm repo, add st scripts to path and source st\_alias.
 
 Preview
 -------
