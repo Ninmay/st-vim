@@ -207,6 +207,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_R,           ttysend,         {.s = "frun\n"}      },
 	{ TERMMOD,              XK_T,           ttysend,         {.s = "fcd\n"}       },
 	{ TERMMOD,              XK_H,           ttysend,         {.s = "ch\n"}        },
+	{ TERMMOD,              XK_B,           ttysend,         {.s = "cb\n"}        },
 	{ TERMMOD,              XK_M,           ttysend,         {.s = "dir-mark\n"}  },
 	{ TERMMOD,              XK_X,           ttysend,         {.s = "goto-mark\n"} },
 };
